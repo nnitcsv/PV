@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MCCI_IN200100UV01 ITSVersion="XML_1.0" xsi:schemaLocation="urn:hl7-org:v3 ./multicacheschemas/MCCI_IN200100UV01.xsd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:mif="urn:hl7-org:v3/mif">
+<id extension="25_V01" root="sender-identifier-value" />
+<creationTime value="20180514165120" />
+<responseModeCode code="D" />
+<interactionId root="2.16.840.1.113883.1.6" extension="MCCI_IN200100UV01" />
+<name code="ichicsr" codeSystem="ich-type-of-message-in-batch-oid" />
+<PORR_IN049016UV>
+<id extension="AL-TEST_B2B-16AL000001" root="ich-senders-safety-report-identifier-oid" />
+<creationTime value="20180514000001" /><interactionId root="2.16.840.1.113883.1.6" extension="MCCI_IN200100UV01" />
+<processingCode code="P" />
+<processingModeCode code="T" />
+<acceptAckCode code="AL" />
+<receiver typeCode="RCV">
+<device classCode="DEV" determinerCode="INSTANCE">
+<id extension="TEST_ARGUS" root="ich-message-receiver-identifier-oid" />
+</device>
+</receiver>
+<sender typeCode="SND">
+<device classCode="DEV" determinerCode="INSTANCE">
+<id extension="TEST_B2B" root="ich-message-sender-identifier-oid" />
+</device>
+</sender>
+<controlActProcess classCode="CACT" moodCode="EVN">
+<code code="PORR_TE049016UV" codeSystem="2.16.840.1.113883.1.18" />
+<effectiveTime value="20180514000001" /><subject typeCode="SUBJ">
+<investigationEvent classCode="INVSTG" moodCode="EVN">
+<id root="ich-senders-safety-report-identifier-oid" extension="AL-TEST_B2B-16AL000001" />
+<id root="ich-worldwide-case-identifier-oid" extension="AL-TEST_B2B-16AL000001" />
+<code code="PAT_ADV_EVNT" codeSystem="2.16.840.113883.5.4" />
+<text mediaType="text/plain">This 36 Years old ManZu Male subject was participating   and developed headache . Additionally, the patient developed Vomiting.
+The subject’s medical history provided by the investigator included Headache,Hepatitis,Hyperlipidaemia,Hypertension.  {Include any previous treatment for the indication treated, if reported} OR {Enter no additional medical history was reported by the investigator at the time of the event if no additional medical history is reported}.  (Concomitant medications reported included (Copy of VACCINE_TRADE2) is used for (Hepatitis),medication time and regimen:[UNK]-[UNK]([UNK][UNK]、[UNK]、[UNK]);(VACCINE_TRADE) is used for (Hepatitis),medication time and regimen:[UNK]-[UNK]([UNK][UNK]、[UNK]、[UNK])) OR {No relevant concomitant medications were reported}.  {The following medications were reported suspected “enter co-suspect drugs”}.
+The subject received the first dose of [(IF BLINDED, blinded)] investigational study drug(s) for Headache  on 01-nov-2016.  On 01-dec-2016, the subject developed / experienced headache  (IF HOSPITALIZED, and was hospitalized)]. Additionally, the subject developed Vomiting. {Insert relevant / abnormal labs and/or diagnostic data in format :    and any additional clinical info reported on SAE form}.  Treatment for the event included [TREATMENT DRUG GENERIC NAME(s)] from [start date] to [stop date], [ROUTE DRUG DOSE UNIT; FREQUENCY] OR {No treatment information was reported by the investigator}. 
+The subject’s last dose of investigational drug prior to the event was on [UNK]. Investigational drug (was continued) OR (was discontinued on 10milligram、bid、Auricular OR (dose was reduced on {date} and restarted at regular dose on {date}) OR (was delayed on [UNK]and restarted on [UNK]. 
+headache(Fatal),Vomiting(Fatal) . (The subject died on 15-feb-2017. The cause of death was reported as  
+The investigator reported that: headache(Almost Certain),Vomiting(No Causality)</text>
+<statusCode code="active" />
+<effectiveTime>
+<low value="20161201" />
+</effectiveTime>
+<availabilityTime value="20161201" />
+<reference typeCode="REFR">
+<document classCode="DOC" moodCode="EVN">
+<title>Source of this Case Safety Report in E2B(R2) Format</title>
+</document>
+</reference>
+<component typeCode="COMP">
+<adverseEventAssessment classCode="INVSTG" moodCode="EVN">
+<subject1 typeCode="SBJ">
+<primaryRole classCode="INVSBJ">
+<player1 classCode="PSN" determinerCode="INSTANCE">
+<name>LDQ</name>
+<administrativeGenderCode code="1" codeSystem="1.0.5218" /><birthTime value="19820101" /><deceasedTime value="20170215" />
+</player1>
+<subjectOf2 typeCode="SBJ">
+<observation moodCode="EVN" classCode="OBS">
+<code code="bodyweight" codeSystem="ich-observation-code-oid" />
+<value xsi:type="PQ" value="70" unit="kg" />
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation moodCode="EVN" classCode="OBS">
+<code code="height" codeSystem="ich-observation-code-oid" />
+<value xsi:type="PQ" value="180" unit="cm" />
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer>
+<code code="relevantMedicalHistoryAndConcurrentConditions" codeSystem="ich-observation-code-oid" />
+<component typeCode="COMP">
+<observation moodCode="EVN" classCode="OBS">
+<code>
+<originalText>Hypertension (17.0)</originalText>
+</code>
+</observation>
+</component>
+<component typeCode="COMP">
+<observation moodCode="EVN" classCode="OBS">
+<code>
+<originalText>Hyperlipidaemia (17.0)</originalText>
+</code>
+</observation>
+</component>
+</organizer>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation moodCode="EVN" classCode="OBS">
+<id extension="RID1" root="oidInternalReferencesToReaction" />
+<code code="reaction" codeSystem="ich-observation-code-oid" />
+<effectiveTime xsi:type="IVL_TS">
+<low value="201612011553" />
+</effectiveTime>
+<value xsi:type="CE" codeSystem="2.16.840.1.113883.6.163" code="Headache" codeSystemVersion="17.0">
+<originalText>headache</originalText>
+</value>
+<location typeCode="LOC">
+<locatedEntity classCode="LOCE">
+<locatedPlace classCode="COUNTRY" determinerCode="INSTANCE">
+<code code="AL" codeSystem="1.0.3166.1.2.2" />
+</locatedPlace>
+</locatedEntity>
+</location>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="termHighlightedByReporter" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" code="3" codeSystem="ich-term-highlighted-oid" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="resultsInDeath" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" value="true" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="isLifeThreatening" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" value="true" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="requiresInpatientHospitalization" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" value="true" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="resultsInPersistentOrSignificantDisability" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" nullFlavor="NI" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="congenitalAnomalyBirthDefect" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" nullFlavor="NI" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="otherMedicallyImportantCondition" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" nullFlavor="NI" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="outcome" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" code="5" codeSystem="ich-outcome-of-reaction-event-oid" />
+</observation>
+</outboundRelationship2>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation moodCode="EVN" classCode="OBS">
+<id extension="RID2" root="oidInternalReferencesToReaction" />
+<code code="reaction" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" codeSystem="2.16.840.1.113883.6.163" code="Emesis" codeSystemVersion="17.0">
+<originalText>Vomiting</originalText>
+</value>
+<location typeCode="LOC">
+<locatedEntity classCode="LOCE">
+<locatedPlace classCode="COUNTRY" determinerCode="INSTANCE">
+<code code="AL" codeSystem="1.0.3166.1.2.2" />
+</locatedPlace>
+</locatedEntity>
+</location>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="resultsInDeath" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" value="true" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="isLifeThreatening" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" value="true" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="requiresInpatientHospitalization" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" value="true" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="resultsInPersistentOrSignificantDisability" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" nullFlavor="NI" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="congenitalAnomalyBirthDefect" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" nullFlavor="NI" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="otherMedicallyImportantCondition" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" nullFlavor="NI" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation moodCode="EVN" classCode="OBS">
+<code code="outcome" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" code="5" codeSystem="ich-outcome-of-reaction-event-oid" />
+</observation>
+</outboundRelationship2>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer>
+<code code="drugInformation" codeSystem="ich-observation-code-oid" />
+<component typeCode="COMP">
+<substanceAdministration moodCode="EVN" classCode="SBADM">
+<id extension="DID1" root="oidInternalReferencesToSubstanceAdministration" />
+<consumable>
+<instanceOfKind classCode="INST">
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<code />
+<name>TEST_TRADE</name>
+<asManufacturedProduct classCode="MANU" />
+<ingredient classCode="ACTI">
+<ingredientSubstance classCode="MMAT" determinerCode="KIND">
+<name>ABACAVIR</name>
+</ingredientSubstance>
+</ingredient>
+</kindOfProduct>
+<subjectOf typeCode="SBJ">
+<productEvent classCode="ACT" moodCode="EVN">
+<code code="retailSupply" codeSystem="ich-observation-code-oid" />
+<performer typeCode="PRF">
+<assignedEntity classCode="ASSIGNED">
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<addr>
+<country>AL</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+</productEvent>
+</subjectOf>
+</instanceOfKind>
+</consumable>
+<outboundRelationship1 typeCode="SAS">
+<pauseQuantity value="43206" unit="min" />
+<actReference classCode="ACT" moodCode="EVN">
+<id extension="RID1" />
+</actReference>
+</outboundRelationship1>
+<outboundRelationship2 typeCode="COMP">
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+<text>10 milligram, bid</text>
+<effectiveTime xsi:type="SXPR_TS">
+<comp xsi:type="PIVL_TS">
+<period value="1" unit="d" />
+</comp>
+<comp xsi:type="IVL_TS" operator="A">
+<low value="20161101" />
+</comp>
+</effectiveTime>
+<routeCode code="001" codeSystem="ich-route-of-administration-oid" />
+<doseQuantity value="20" unit="mg" />
+<consumable typeCode="CSM">
+<instanceOfKind classCode="INST">
+<productInstanceInstance classCode="MMAT" determinerCode="INSTANCE">
+<id nullFlavor="NI" />
+<lotNumberText>Bat001</lotNumberText>
+</productInstanceInstance>
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<formCode>
+<originalText>Capsule</originalText>
+</formCode>
+</kindOfProduct>
+</instanceOfKind>
+</consumable>
+</substanceAdministration>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="SUMM">
+<observation moodCode="EVN" classCode="OBS">
+<code code="cumulativeDoseToReaction" codeSystem="ich-observation-code-oid" />
+<value xsi:type="PQ" value="200" unit="mg" />
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="REFR">
+<observation moodCode="EVN" classCode="OBS">
+<code code="additionalInformation" codeSystem="ich-observation-code-oid" />
+<value xsi:type="ST">PkgID=Pac001</value>
+</observation>
+</outboundRelationship2>
+<inboundRelationship typeCode="RSON">
+<observation moodCode="EVN" classCode="OBS">
+<code code="indication" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="17.0">
+<originalText>Headache(17.0)</originalText>
+</value>
+<performer>
+<assignedEntity>
+<code code="sourceReporter" codeSystem="ich-observation-code-oid" />
+</assignedEntity>
+</performer>
+<outboundRelationship1 typeCode="REFR">
+<actReference classCode="SBADM" moodCode="EVN">
+<id extension="DID1" root="oidInternalReferencesToSubstanceAdministration" />
+</actReference>
+</outboundRelationship1>
+</observation>
+</inboundRelationship>
+<inboundRelationship typeCode="CAUS">
+<act classCode="ACT" moodCode="EVN">
+<code code="4" codeSystem="ich-action-taken-with-drug-oid" /></act>
+</inboundRelationship>
+</substanceAdministration>
+</component>
+</organizer>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer>
+<code code="drugInformation" codeSystem="ich-observation-code-oid" />
+<component typeCode="COMP">
+<substanceAdministration moodCode="EVN" classCode="SBADM">
+<id extension="DID2" root="oidInternalReferencesToSubstanceAdministration" />
+<consumable>
+<instanceOfKind classCode="INST">
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<code />
+<name>VACCINE_TRADE2</name>
+<asManufacturedProduct classCode="MANU" />
+</kindOfProduct>
+<subjectOf typeCode="SBJ">
+<productEvent classCode="ACT" moodCode="EVN">
+<code code="retailSupply" codeSystem="ich-observation-code-oid" />
+<performer typeCode="PRF">
+<assignedEntity classCode="ASSIGNED">
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<addr>
+<country>AL</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+</productEvent>
+</subjectOf>
+</instanceOfKind>
+</consumable>
+<outboundRelationship1 typeCode="SAS">
+<pauseQuantity value="43206" unit="min" />
+<actReference classCode="ACT" moodCode="EVN">
+<id extension="RID1" />
+</actReference>
+</outboundRelationship1>
+<inboundRelationship typeCode="RSON">
+<observation moodCode="EVN" classCode="OBS">
+<code code="indication" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="17.0">
+<originalText>Hepatitis(17.0)</originalText>
+</value>
+<performer>
+<assignedEntity>
+<code code="sourceReporter" codeSystem="ich-observation-code-oid" />
+</assignedEntity>
+</performer>
+<outboundRelationship1 typeCode="REFR">
+<actReference classCode="SBADM" moodCode="EVN">
+<id extension="DID2" root="oidInternalReferencesToSubstanceAdministration" />
+</actReference>
+</outboundRelationship1>
+</observation>
+</inboundRelationship>
+</substanceAdministration>
+</component>
+</organizer>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer>
+<code code="drugInformation" codeSystem="ich-observation-code-oid" />
+<component typeCode="COMP">
+<substanceAdministration moodCode="EVN" classCode="SBADM">
+<id extension="DID3" root="oidInternalReferencesToSubstanceAdministration" />
+<consumable>
+<instanceOfKind classCode="INST">
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<code />
+<name>Copy of VACCINE_TRADE2</name>
+<asManufacturedProduct classCode="MANU" />
+<ingredient classCode="ACTI">
+<ingredientSubstance classCode="MMAT" determinerCode="KIND">
+<name>ABACAVIR</name>
+</ingredientSubstance>
+</ingredient>
+</kindOfProduct>
+<subjectOf typeCode="SBJ">
+<productEvent classCode="ACT" moodCode="EVN">
+<code code="retailSupply" codeSystem="ich-observation-code-oid" />
+<performer typeCode="PRF">
+<assignedEntity classCode="ASSIGNED">
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<addr>
+<country>AL</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+</productEvent>
+</subjectOf>
+</instanceOfKind>
+</consumable>
+<outboundRelationship1 typeCode="SAS">
+<pauseQuantity value="43206" unit="min" />
+<actReference classCode="ACT" moodCode="EVN">
+<id extension="RID1" />
+</actReference>
+</outboundRelationship1>
+<inboundRelationship typeCode="RSON">
+<observation moodCode="EVN" classCode="OBS">
+<code code="indication" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="17.0">
+<originalText>Hepatitis(17.0)</originalText>
+</value>
+<performer>
+<assignedEntity>
+<code code="sourceReporter" codeSystem="ich-observation-code-oid" />
+</assignedEntity>
+</performer>
+<outboundRelationship1 typeCode="REFR">
+<actReference classCode="SBADM" moodCode="EVN">
+<id extension="DID3" root="oidInternalReferencesToSubstanceAdministration" />
+</actReference>
+</outboundRelationship1>
+</observation>
+</inboundRelationship>
+</substanceAdministration>
+</component>
+</organizer>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer>
+<code code="drugInformation" codeSystem="ich-observation-code-oid" />
+<component typeCode="COMP">
+<substanceAdministration moodCode="EVN" classCode="SBADM">
+<id extension="DID4" root="oidInternalReferencesToSubstanceAdministration" />
+<consumable>
+<instanceOfKind classCode="INST">
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<code />
+<name>VACCINE_TRADE</name>
+<asManufacturedProduct classCode="MANU" />
+<ingredient classCode="ACTI">
+<ingredientSubstance classCode="MMAT" determinerCode="KIND">
+<name>ABACAVIR</name>
+</ingredientSubstance>
+</ingredient>
+</kindOfProduct>
+<subjectOf typeCode="SBJ">
+<productEvent classCode="ACT" moodCode="EVN">
+<code code="retailSupply" codeSystem="ich-observation-code-oid" />
+<performer typeCode="PRF">
+<assignedEntity classCode="ASSIGNED">
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<addr>
+<country>AL</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+</productEvent>
+</subjectOf>
+</instanceOfKind>
+</consumable>
+<outboundRelationship1 typeCode="SAS">
+<pauseQuantity value="43206" unit="min" />
+<actReference classCode="ACT" moodCode="EVN">
+<id extension="RID1" />
+</actReference>
+</outboundRelationship1>
+<inboundRelationship typeCode="RSON">
+<observation moodCode="EVN" classCode="OBS">
+<code code="indication" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="17.0">
+<originalText>Hepatitis(17.0)</originalText>
+</value>
+<performer>
+<assignedEntity>
+<code code="sourceReporter" codeSystem="ich-observation-code-oid" />
+</assignedEntity>
+</performer>
+<outboundRelationship1 typeCode="REFR">
+<actReference classCode="SBADM" moodCode="EVN">
+<id extension="DID4" root="oidInternalReferencesToSubstanceAdministration" />
+</actReference>
+</outboundRelationship1>
+</observation>
+</inboundRelationship>
+</substanceAdministration>
+</component>
+</organizer>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer>
+<code code="drugInformation" codeSystem="ich-observation-code-oid" />
+<component typeCode="COMP">
+<substanceAdministration moodCode="EVN" classCode="SBADM">
+<id extension="DID5" root="oidInternalReferencesToSubstanceAdministration" />
+<consumable>
+<instanceOfKind classCode="INST">
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<code />
+<name>STUDY_TRADE2</name>
+<asManufacturedProduct classCode="MANU" />
+<ingredient classCode="ACTI">
+<ingredientSubstance classCode="MMAT" determinerCode="KIND">
+<name>ABACAVIR</name>
+</ingredientSubstance>
+</ingredient>
+</kindOfProduct>
+<subjectOf typeCode="SBJ">
+<productEvent classCode="ACT" moodCode="EVN">
+<code code="retailSupply" codeSystem="ich-observation-code-oid" />
+<performer typeCode="PRF">
+<assignedEntity classCode="ASSIGNED">
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<addr>
+<country>CN</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+</productEvent>
+</subjectOf>
+</instanceOfKind>
+</consumable>
+<outboundRelationship1 typeCode="SAS">
+<pauseQuantity value="43206" unit="min" />
+<actReference classCode="ACT" moodCode="EVN">
+<id extension="RID1" />
+</actReference>
+</outboundRelationship1>
+<inboundRelationship typeCode="RSON">
+<observation moodCode="EVN" classCode="OBS">
+<code code="indication" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="17.0">
+<originalText>Headache(17.0)</originalText>
+</value>
+<performer>
+<assignedEntity>
+<code code="sourceReporter" codeSystem="ich-observation-code-oid" />
+</assignedEntity>
+</performer>
+<outboundRelationship1 typeCode="REFR">
+<actReference classCode="SBADM" moodCode="EVN">
+<id extension="DID5" root="oidInternalReferencesToSubstanceAdministration" />
+</actReference>
+</outboundRelationship1>
+</observation>
+</inboundRelationship>
+</substanceAdministration>
+</component>
+</organizer>
+</subjectOf2>
+</primaryRole>
+</subject1>
+<component typeCode="COMP">
+<causalityAssessment classCode="OBS" moodCode="EVN">
+<code code="interventionCharacterization" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" code="1" codeSystem="ich-characterisation-of-drug-role-oid" />
+<subject2 typeCode="SUBJ">
+<productUseReference classCode="ACT" moodCode="EVN">
+<id extension="DID1" root="oidInternalReferencesToSubstanceAdministration" />
+</productUseReference>
+</subject2>
+</causalityAssessment>
+</component>
+<component typeCode="COMP">
+<causalityAssessment classCode="OBS" moodCode="EVN">
+<code code="causality" codeSystem="ich-observation-code-oid" />
+<value xsi:type="ST">Almost Certain</value>
+<methodCode>
+<originalText>Algorithm</originalText>
+</methodCode>
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code>
+<originalText>Health Care professional</originalText>
+</code>
+</assignedEntity>
+</author>
+<subject1 typeCode="SUBJ">
+<adverseEffectReference classCode="ACT" moodCode="EVN">
+<id extension="RID1" root="oidInternalReferencesToReaction" />
+</adverseEffectReference>
+</subject1>
+<subject2 typeCode="SUBJ">
+<productUseReference classCode="ACT" moodCode="EVN">
+<id extension="DID1" root="oidInternalReferencesToSubstanceAdministration" />
+</productUseReference>
+</subject2>
+</causalityAssessment>
+</component>
+<component typeCode="COMP">
+<causalityAssessment classCode="OBS" moodCode="EVN">
+<code code="causality" codeSystem="ich-observation-code-oid" />
+<value xsi:type="ST">Almost Certain</value>
+<methodCode>
+<originalText>Algorithm</originalText>
+</methodCode>
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code>
+<originalText>Sponsor</originalText>
+</code>
+</assignedEntity>
+</author>
+<subject1 typeCode="SUBJ">
+<adverseEffectReference classCode="ACT" moodCode="EVN">
+<id extension="RID1" root="oidInternalReferencesToReaction" />
+</adverseEffectReference>
+</subject1>
+<subject2 typeCode="SUBJ">
+<productUseReference classCode="ACT" moodCode="EVN">
+<id extension="DID1" root="oidInternalReferencesToSubstanceAdministration" />
+</productUseReference>
+</subject2>
+</causalityAssessment>
+</component>
+<component typeCode="COMP">
+<causalityAssessment classCode="OBS" moodCode="EVN">
+<code code="interventionCharacterization" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" code="1" codeSystem="ich-characterisation-of-drug-role-oid" />
+<subject2 typeCode="SUBJ">
+<productUseReference classCode="ACT" moodCode="EVN">
+<id extension="DID2" root="oidInternalReferencesToSubstanceAdministration" />
+</productUseReference>
+</subject2>
+</causalityAssessment>
+</component>
+<component typeCode="COMP">
+<causalityAssessment classCode="OBS" moodCode="EVN">
+<code code="interventionCharacterization" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" code="2" codeSystem="ich-characterisation-of-drug-role-oid" />
+<subject2 typeCode="SUBJ">
+<productUseReference classCode="ACT" moodCode="EVN">
+<id extension="DID3" root="oidInternalReferencesToSubstanceAdministration" />
+</productUseReference>
+</subject2>
+</causalityAssessment>
+</component>
+<component typeCode="COMP">
+<causalityAssessment classCode="OBS" moodCode="EVN">
+<code code="interventionCharacterization" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" code="2" codeSystem="ich-characterisation-of-drug-role-oid" />
+<subject2 typeCode="SUBJ">
+<productUseReference classCode="ACT" moodCode="EVN">
+<id extension="DID4" root="oidInternalReferencesToSubstanceAdministration" />
+</productUseReference>
+</subject2>
+</causalityAssessment>
+</component>
+<component typeCode="COMP">
+<causalityAssessment classCode="OBS" moodCode="EVN">
+<code code="interventionCharacterization" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" code="1" codeSystem="ich-characterisation-of-drug-role-oid" />
+<subject2 typeCode="SUBJ">
+<productUseReference classCode="ACT" moodCode="EVN">
+<id extension="DID5" root="oidInternalReferencesToSubstanceAdministration" />
+</productUseReference>
+</subject2>
+</causalityAssessment>
+</component>
+<component1 typeCode="COMP">
+<observationEvent moodCode="EVN" classCode="OBS">
+<code code="comment" codeSystem="ich-observation-code-oid" />
+<value xsi:type="ED" mediaType="text/plain">Case Comment</value>
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code code="sourceReporter" codeSystem="ich-observation-code-oid" />
+</assignedEntity>
+</author>
+</observationEvent>
+</component1>
+<component1 typeCode="COMP">
+<observationEvent moodCode="EVN" classCode="OBS">
+<code code="diagnosis" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE">
+<originalText>Myocarditis (17.0)</originalText>
+</value>
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code code="sender" codeSystem="ich-observation-code-oid" />
+</assignedEntity>
+</author>
+</observationEvent>
+</component1>
+<component1 typeCode="COMP">
+<observationEvent moodCode="EVN" classCode="OBS">
+<code code="comment" codeSystem="ich-observation-code-oid" />
+<value xsi:type="ED" mediaType="text/plain">Company Comment</value>
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code code="sender" codeSystem="ich-observation-code-oid" />
+</assignedEntity>
+</author>
+</observationEvent>
+</component1>
+</adverseEventAssessment>
+</component>
+<component typeCode="COMP">
+<observationEvent classCode="OBS" moodCode="EVN">
+<code code="additionalDocumentsAvailable" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" value="true" />
+</observationEvent>
+</component>
+<component typeCode="COMP">
+<observationEvent classCode="OBS" moodCode="EVN">
+<code code="localCriteriaForExpedited" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" value="true" />
+</observationEvent>
+</component>
+<outboundRelationship typeCode="SPRT">
+<relatedInvestigation classCode="INVSTG" moodCode="EVN">
+<code code="initialReport" codeSystem="ich-observation-code-oid" />
+<subjectOf2 typeCode="SUBJ">
+<controlActEvent classCode="CACT" moodCode="EVN">
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code code="2" codeSystem="ich-first-sender-of-this-case-oid" />
+</assignedEntity>
+</author>
+</controlActEvent>
+</subjectOf2>
+</relatedInvestigation>
+</outboundRelationship>
+<outboundRelationship typeCode="SPRT">
+<priorityNumber value="1" /><relatedInvestigation classCode="INVSTG" moodCode="EVN">
+<code code="sourceReport" codeSystem="ich-observation-code-oid" />
+<subjectOf2 typeCode="SUBJ">
+<controlActEvent classCode="CACT" moodCode="EVN">
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<addr>
+<state>TIANJIN</state>
+</addr>
+<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+<name>
+<given>Nnit</given>
+<family>Test</family>
+</name>
+<asQualifiedEntity classCode="QUAL">
+<code code="1" codeSystem="ich-qualification-oid" /></asQualifiedEntity>
+<asLocatedEntity classCode="LOCE">
+<location determinerCode="INSTANCE" classCode="COUNTRY">
+<code code="AL" codeSystem="1.0.3166.1.2.2" />
+</location>
+</asLocatedEntity>
+</assignedPerson>
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<name>Nnit</name>
+</representedOrganization>
+</assignedEntity>
+</author>
+</controlActEvent>
+</subjectOf2>
+</relatedInvestigation>
+</outboundRelationship>
+<subjectOf1 typeCode="SUBJ">
+<controlActEvent classCode="CACT" moodCode="EVN">
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code code="1" codeSystem="ich-sender-type-oid" /><addr />
+<telecom value="mailto:NNITLifeScience@nnit.com" />
+<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+<name />
+</assignedPerson>
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<assignedEntity classCode="ASSIGNED">
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<name>TEST_B2B</name>
+</representedOrganization>
+</assignedEntity>
+</representedOrganization>
+</assignedEntity>
+</author>
+</controlActEvent>
+</subjectOf1>
+<subjectOf2 typeCode="SUBJ">
+<investigationCharacteristic classCode="OBS" moodCode="EVN">
+<code code="ichReportType" codeSystem="ich-observation-code-oid" />
+<value xsi:type="CE" code="1" codeSystem="ich-type-of-report-oid" />
+</investigationCharacteristic>
+</subjectOf2>
+<subjectOf2 typeCode="SUBJ">
+<investigationCharacteristic classCode="OBS" moodCode="EVN">
+<code code="otherCaseIds" codeSystem="ich-observation-code-oid" />
+<value xsi:type="BL" nullFlavor="NI" />
+</investigationCharacteristic>
+</subjectOf2>
+</investigationEvent>
+</subject>
+</controlActProcess>
+</PORR_IN049016UV>
+<receiver typeCode="RCV">
+<device classCode="DEV" determinerCode="INSTANCE">
+<id extension="TEST_ARGUS" root="ich-batch-receiver-identifier-oid" />
+</device>
+</receiver>
+<sender typeCode="SND">
+<device classCode="DEV" determinerCode="INSTANCE">
+<id extension="TEST_B2B" root="ich-batch-sender-identifier-oid" />
+</device>
+</sender>
+</MCCI_IN200100UV01>

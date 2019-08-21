@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')  }}">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h2>{{ name }}</h2>
+    <div id="app">
+    <table>
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>邮件</th>
+            <th>密码</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="user in users">
+            <td v-text="user.username"></td>
+            <td v-text="user.email"></td>
+            <td v-text="user.password"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            users: []
+        },
+        created: function () {
+　　　　　　axios.get('/demos/demo/getdata').then((response)=>{
+                this.users = response.data;
+                console.log(response.data)
+            }).catch((response)=>{
+                console.log(response)
+            })
+        }
+    })
+</script>
+</html>
