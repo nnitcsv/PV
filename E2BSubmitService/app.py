@@ -4,8 +4,8 @@ from demos.demo import demo
 from settings import DebugMode
 from settings import TestingMode
 
-#app = Flask(__name__)
-app = Flask(__name__, static_folder='C:/Users/Administrator/Documents\work/nnit/vue/firstVue/dist/static', template_folder='C:/Users/Administrator/Documents\work/nnit/vue/firstVue/dist')
+
+app = Flask(__name__, static_folder='C:/Users/Administrator/Documents/work/nnit/E2BSubmit/E2BSubmitVue/dist/static', template_folder='C:/Users/Administrator/Documents/work/nnit/E2BSubmit/E2BSubmitVue/dist')
 app.config.from_object(DebugMode)
 
 @app.route('/')
