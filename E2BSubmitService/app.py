@@ -5,7 +5,7 @@ from settings import DebugMode
 from settings import TestingMode
 
 
-app = Flask(__name__, static_folder='C:/Users/Administrator/Documents/work/nnit/E2BSubmit/E2BSubmitVue/dist/static', template_folder='C:/Users/Administrator/Documents/work/nnit/E2BSubmit/E2BSubmitVue/dist')
+app = Flask(__name__, static_folder='C:/WQXL/Git/PV/E2BSubmitVue/dist/static', template_folder='C:/WQXL/Git/PV/E2BSubmitVue/dist')
 app.config.from_object(DebugMode)
 
 @app.route('/')
